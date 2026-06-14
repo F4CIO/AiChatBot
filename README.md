@@ -1,6 +1,9 @@
 # AiChatBot
 Chatbot example using Claude managed agents, sessions, environment and memory stores written in React and .Net
 
+See it live here: https://www.booksynth.com/CvRobot
+This live example answers question about my CV that I fed into Claude agent earlier.
+
 ![](/F4CIO.ChatBot.png)
 
 A minimal, single-screen chatbot. A **React 19** front end talks to a **.NET 10** REST API, which
