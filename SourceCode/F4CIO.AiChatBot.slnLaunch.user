@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Test in Console",
+    "Projects": [
+      {
+        "Path": "F4CIO.AiChatBot.UiApi\\F4CIO.AiChatBot.UiApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "F4CIO.AiChatBot.UiConsole\\F4CIO.AiChatBot.UiConsole.csproj",
+        "Action": "Start",
+        "DebugTarget": "F4CIO.AiChatBot.UiConsole"
+      }
+    ]
+  }
+]

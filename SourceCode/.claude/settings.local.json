@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "WebSearch",
+      "Bash(gh api *)",
+      "Bash(Select-String -Pattern \"Beta/\\(Agents|Sessions|Environments|MemoryStores\\)\")",
+      "Bash(Select-Object -First 40)",
+      "Bash(gh auth *)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Projects\\\\F4CIO.AiChatBot\\\\SourceCode\" -MaxDepth 1 | Where-Object { $_.PSIsContainer } | Select-Object Name)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\Projects\\\\F4CIO.AiChatBot\\\\SourceCode\" -Directory | Where-Object { $_.Name -notmatch '^\\\\.github|^\\\\.claude' })"
+    ]
+  }
+}

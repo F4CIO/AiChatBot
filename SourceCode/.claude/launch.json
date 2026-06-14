@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "uiweb",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "F4CIO.AiChatBot.UiWeb", "run", "dev", "--", "--port", "5101", "--strictPort"],
+      "port": 5101
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+@F4CIO.AiChatBot.UiApi_HostAddress = http://localhost:5100
+
+GET {{F4CIO.AiChatBot.UiApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

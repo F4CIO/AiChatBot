@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\F4CIO.AiChatBot.BusinessLogic\F4CIO.AiChatBot.BusinessLogic.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Contracts\F4CIO.AiChatBot.Contracts.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Common\F4CIO.AiChatBot.Common.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Common.Entities\F4CIO.AiChatBot.Common.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

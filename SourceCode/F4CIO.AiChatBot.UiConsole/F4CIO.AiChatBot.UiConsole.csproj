@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\F4CIO.AiChatBot.BusinessLogic\F4CIO.AiChatBot.BusinessLogic.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Contracts\F4CIO.AiChatBot.Contracts.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Common\F4CIO.AiChatBot.Common.csproj" />
+    <ProjectReference Include="..\F4CIO.AiChatBot.Common.Entities\F4CIO.AiChatBot.Common.Entities.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

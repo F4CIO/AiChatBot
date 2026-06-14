@@ -1,0 +1,17 @@
+20260613003923438	ERROR LogId=20260613003923413 :: Status Code: Unauthorized
+{"type":"error","error":{"type":"authentication_error","message":"No valid authentication credentials provided"},"request_id":"req_011CbzAnEHiCRT69SPRnV1Xr"}
+   at Anthropic.AnthropicClientWithRawResponse.Execute[T](HttpRequest`1 request, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/AnthropicClient.cs:line 429
+   at Anthropic.Services.Beta.EnvironmentServiceWithRawResponse.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 328
+   at Anthropic.Services.Beta.EnvironmentService.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 116
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.FindOrCreateEnvironmentAsync(CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 69
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.EnsureReadyAsync(CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 54
+   at F4CIO.AiChatBot.UiApi.HandlerForStartup.<>c__DisplayClass2_0.<<StartAsync>b__0>d.MoveNext() in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.UiApi\HandlerForStartup.cs:line 28
+20260613004044015	ERROR LogId=20260613004044015 :: Status Code: Unauthorized
+{"type":"error","error":{"type":"authentication_error","message":"No valid authentication credentials provided"},"request_id":"req_011CbzAtBRF33g6Am7Yqfbm5"}
+   at Anthropic.AnthropicClientWithRawResponse.Execute[T](HttpRequest`1 request, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/AnthropicClient.cs:line 429
+   at Anthropic.Services.Beta.EnvironmentServiceWithRawResponse.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 328
+   at Anthropic.Services.Beta.EnvironmentService.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 116
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.FindOrCreateEnvironmentAsync(CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 69
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.EnsureReadyAsync(CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 54
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.StartSessionAsync(CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 132
+   at F4CIO.AiChatBot.BusinessLogic.ChatService.SendMessageAsync(ChatRequest request, CancellationToken ct) in D:\Projects\F4CIO.AiChatBot\SourceCode\F4CIO.AiChatBot.BusinessLogic\ChatService.cs:line 53
