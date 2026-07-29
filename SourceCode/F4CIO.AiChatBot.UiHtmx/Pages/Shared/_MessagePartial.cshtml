@@ -1,0 +1,4 @@
+@model (string Role, string Text)
+<div class="bubble @(Model.Role == "user" ? "bubble--user" : "bubble--assistant")">
+    @Model.Text
+</div>

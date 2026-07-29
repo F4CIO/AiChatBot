@@ -1,0 +1,29 @@
+20260729143423544	ERROR LogId=20260729143423535 :: Status Code: Unauthorized
+{"type":"error","error":{"type":"authentication_error","message":"No valid authentication credentials provided"},"request_id":"req_011CdWMtFfMFtSRK6h6nBk5T"}
+   at Anthropic.AnthropicClientWithRawResponse.Execute[T](HttpRequest`1 request, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/AnthropicClient.cs:line 429
+   at Anthropic.Services.Beta.EnvironmentServiceWithRawResponse.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 328
+   at Anthropic.Services.Beta.EnvironmentService.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 116
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.FindOrCreateEnvironmentAsync(CancellationToken ct) in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 69
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.EnsureReadyAsync(CancellationToken ct) in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 54
+   at F4CIO.AiChatBot.UiHtmx.HandlerForStartup.<>c__DisplayClass2_0.<<StartAsync>b__0>d.MoveNext() in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.UiHtmx\HandlerForStartup.cs:line 21
+20260729143436200	ERROR LogId=20260729143436199 :: Status Code: Unauthorized
+{"type":"error","error":{"type":"authentication_error","message":"No valid authentication credentials provided"},"request_id":"req_011CdWMuDHzdPHLRS4dian74"}
+   at Anthropic.AnthropicClientWithRawResponse.Execute[T](HttpRequest`1 request, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/AnthropicClient.cs:line 429
+   at Anthropic.Services.Beta.EnvironmentServiceWithRawResponse.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 328
+   at Anthropic.Services.Beta.EnvironmentService.List(EnvironmentListParams parameters, CancellationToken cancellationToken) in /home/runner/work/anthropic-sdk-csharp/anthropic-sdk-csharp/src/Anthropic/Services/Beta/EnvironmentService.cs:line 116
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.FindOrCreateEnvironmentAsync(CancellationToken ct) in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 69
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.EnsureReadyAsync(CancellationToken ct) in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 54
+   at F4CIO.AiChatBot.BusinessLogic.HandlerForClaude.StartSessionAsync(CancellationToken ct) in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\HandlerForClaude.cs:line 132
+   at F4CIO.AiChatBot.BusinessLogic.ChatService.StreamMessageAsync(ChatRequest request, CancellationToken ct)+MoveNext() in D:\Projects\F4CIO.ArguingAgents\SourceCode\F4CIO.AiChatBot.BusinessLogic\ChatService.Streaming.cs:line 44
+20260729144303370	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729144312420	New conversation 3578e2cc760d4884891293b22d769d68 (session sesn_01D7tFfv2SniqvgxKY3EBSDf)
+20260729144937332	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729144939538	New conversation 0de4a81313db4b219dece836f96abd02 (session sesn_01Vc9jyJ8EcxQ9iHG7QwsifG)
+20260729151624888	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729151700274	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729151755645	New conversation a87036ac9524429fb6583ef5f04b4f96 (session sesn_01HLqqoPCMMiBfsdTg3XtutV)
+20260729152515606	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729152529990	New conversation 027a4ccb40614110b71e429bc4285ed6 (session sesn_016npTGBnMTRgS9ehxvA3Dgf)
+20260729152618840	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK
+20260729152706232	New conversation dfc83308e00341499c25d1c002cbedf5 (session sesn_01B6Retdn61viZdeosZ4G73L)
+20260729152937577	Claude ready: env=env_014C9H1BuRYgetr9HjtHuWpc, agent=agent_013JCQGXgPzh8FkHh7bdiGV1, memoryStore=memstore_01KUGxWEp1taLyimhywVXUoK

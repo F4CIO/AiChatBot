@@ -1,0 +1,20 @@
+@*
+  Minimal layout referencing the site CSS and client scripts (htmx + stream adapter).
+*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"]</title>
+  <link rel="stylesheet" href="@Url.Content("~/css/site.css")" />
+</head>
+<body>
+  <div id="root">
+    @RenderBody()
+  </div>
+
+  <script src="@Url.Content("~/js/htmx.min.js")"></script>
+  <script src="@Url.Content("~/js/stream.js")"></script>
+</body>
+</html>

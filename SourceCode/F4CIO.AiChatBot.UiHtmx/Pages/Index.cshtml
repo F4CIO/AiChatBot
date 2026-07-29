@@ -1,0 +1,29 @@
+@page
+@model F4CIO.AiChatBot.UiHtmx.Pages.IndexModel
+@{
+    Layout = "_Layout";
+}
+
+<div class="chat" id="chat">
+  <header class="chat__header">
+    <span class="chat__dot" aria-hidden="true"></span>
+    <h1>@Model.AppTitle</h1>
+  </header>
+
+  <div class="chat__messages" id="messages">
+    <div class="chat__empty">Ask me anything to get started.</div>
+  </div>
+
+  <div id="error" class="chat__error" style="display:none;" role="alert"></div>
+
+  <form id="chatForm" class="chat__input">
+    <textarea id="input" placeholder="Type a message…" rows="1" autofocus></textarea>
+    <button id="sendBtn" type="submit">Send</button>
+  </form>
+</div>
+
+<script>
+  window.__USE_ASYNC__ = @Model.UseAsync.ToString().ToLowerInvariant();
+  // Application base path (ends without trailing slash)
+  window.__APP_BASE__ = '@Url.Content("~/")';
+</script>

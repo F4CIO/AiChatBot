@@ -16,6 +16,10 @@ mkdir "..\Published\F4CIO.AiChatBot.UiWeb"
 xcopy /e /i /y "F4CIO.AiChatBot.UiWeb\dist\*" "..\Published\F4CIO.AiChatBot.UiWeb\" >nul
 copy /y "F4CIO.AiChatBot.UiWeb\deploy\run-uiweb.bat" "..\Published\F4CIO.AiChatBot.UiWeb\run-uiweb.bat" >nul
 copy /y "F4CIO.AiChatBot.UiWeb\deploy\serve-static.ps1" "..\Published\F4CIO.AiChatBot.UiWeb\serve-static.ps1" >nul
+echo === Publishing UiHtmx ===
+dotnet publish "F4CIO.AiChatBot.UiHtmx\F4CIO.AiChatBot.UiHtmx.csproj" -c Release -r win-x64 --self-contained true -o "..\Published\F4CIO.AiChatBot.UiHtmx"
+if errorlevel 1 ( echo UIHTMX PUBLISH FAILED & pause & exit /b 1 )
+copy /y "F4CIO.AiChatBot.UiHtmx\deploy\run-uihtmx.bat" "..\Published\F4CIO.AiChatBot.UiHtmx\run-uihtmx.bat" >nul
 echo.
-echo All done. Outputs under ..\Published\: F4CIO.AiChatBot.UiApi, F4CIO.AiChatBot.UiConsole, F4CIO.AiChatBot.UiWeb
+echo All done. Outputs under ..\Published\: F4CIO.AiChatBot.UiApi, F4CIO.AiChatBot.UiConsole, F4CIO.AiChatBot.UiWeb, F4CIO.AiChatBot.UiHtmx
 pause
